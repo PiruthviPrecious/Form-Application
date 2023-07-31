@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="from.css">
+    <script src="https://kit.fontawesome.com/a1df11952d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Application</h1>
+    <form id="form" action="">
+        <div class="input-group">
+        <label for="firstname">First Name <i class="fa-solid fa-user" style="color: green;"></i></label>
+        <input type="text" id="firstname">
+        <div class="error"></div>
+        </div>
+
+        <div class="input-group">
+        <label for="lastname">Last Name <i class="fa-solid fa-user" style="color: green;"></i></label>
+        <input type="text" id="lastname">
+        <div class="error"></div>
+        </div>
+
+        <div class="input-group">
+        <label for="dob">Date Of Birth</label>
+        <input type="date" id="dob">
+        <div class="error"></div>
+        </div>
+
+        <div class="input-group">
+            <label for="gender">Gender:</label>
+            <div class="gender">
+            <input class="gen" type="radio" name="gender" id="male"><label for="male">Male</label>     
+            <input class="gen" type="radio" name="gender" id="female"><label for="female">Female</label>
+            </div>
+            <div class="error" name="gender"></div>
+        </div>
+
+        <div class="inp-group">
+            <label for="course">Select Course:</label>
+            <select name="course" id="course">
+                <option value="default">Course</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="dotnet">DotNet</option>
+                <option value="mysql">MySql</option>
+                <option value="html">Html</option>
+                <option value="css">Css</option>
+                <option value="js">JavaScript</option>
+            </select>
+            <div class="error"></div>
+        </div>
+
+        <div class="input-group">
+        <label for="phone">Mobile <i class="fa-solid fa-mobile" style="color: green;"></i></label>
+        <input type="text" id="phone">
+        <div class="error"></div>
+        </div>
+
+        <div class="input-group">
+        <label for="email">Email <i class="fa-solid fa-envelope" style="color: green;"></i></label>
+        <input type="email" id="email">
+        <div class="error"></div>
+        </div>
+
+        <!-- <div class="input-group">
+        <label for="address">Address <i class="fa-solid fa-address-card" style="color: green;"></i></label>
+        <textarea name="address" id="address" cols="30" rows="5"></textarea>
+        <div class="error"></div>
+        </div> -->
+
+        <!-- <label for="queries">Queries <i class="fa-solid fa-clipboard-question" style="color: green;"></i></label>
+        <textarea name="queries" id="queries" cols="30" rows="2"></textarea> -->
+        
+        <div class="input-group">
+        <label for="password">Password <i class="fa-solid fa-lock" style="color: green;"></i></label>
+        <input type="password" id="password"><i class="fa-solid fa-eye" style="position:relative;bottom:15px;left:285px;"></i>
+        <div class="error"></div>
+        </div>
+
+        <div class="input-group">
+        <label for="confirmPass">Confirm Password  <i class="fa-solid fa-lock" style="color: green;"></i></label>
+        <input type="password" id="confirmPass"><i class="fa-solid fa-eye" style="position:relative;bottom:15px;left:285px;"></i>
+        <div class="error"></div>
+        </div>
+
+        <div class="inp-group">
+        <input type="checkbox" id="checkbox">
+        <label for="check"> I Agree to the <a href="">terms and conditions.</a></label>
+        <div class="error"></div>
+        </div>
+
+        <button id="submit">Submit</button>
+    </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
